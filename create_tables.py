@@ -4,7 +4,7 @@ import os
 commands = [
     '''
     CREATE TABLE covid (
-        id INT NOT NULL PRIMARY KEY,
+        id BIGSERIAL NOT NULL PRIMARY KEY,
         country VARCHAR(30) NOT NULL,
         total VARCHAR(15),
         new VARCHAR(15),
@@ -24,7 +24,7 @@ commands = [
     ''',
     '''
     CREATE TABLE pop_by_country (
-        id INT NOT NULL PRIMARY KEY,
+        id BIGSERIAL NOT NULL PRIMARY KEY,
         country VARCHAR(30) NOT NULL,
         population VARCHAR(13),
         yearly_change VARCHAR(8),
