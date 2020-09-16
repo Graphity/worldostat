@@ -1,5 +1,5 @@
 import psycopg2
-import sys
+import os
 
 commands = [
     '''
@@ -63,6 +63,7 @@ commands = [
     )
     '''
 ]
+
 
 def create_tables():
     try:
